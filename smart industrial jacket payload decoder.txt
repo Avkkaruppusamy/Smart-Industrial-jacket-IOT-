@@ -1,0 +1,15 @@
+
+
+function Decoder(bytes,port){
+  var MQ4 = (bytes[0] << 8) | bytes[1];
+  var MQ2 = (bytes[2]<< 8) | bytes[3];
+  
+  
+  
+  return {
+    MQ4:MQ4+"ppm",
+    MQ2:MQ2+"ppm"
+      
+    };
+
+}
